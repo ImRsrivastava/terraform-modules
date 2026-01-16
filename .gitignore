@@ -1,0 +1,106 @@
+############################################
+# Terraform
+############################################
+
+# Terraform working directory
+.terraform/
+
+# Terraform state files (NEVER COMMIT)
+*.tfstate
+*.tfstate.*
+terraform.tfstate
+terraform.tfstate.backup
+
+# Terraform variable files (contain secrets)
+*.tfvars
+*.tfvars.json
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Terraform CLI override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform.*
+
+
+############################################
+# Sensitive / Security Files
+############################################
+
+# Environment variables
+.env
+.env.*
+*.env
+
+# SSH & TLS keys
+*.pem
+*.key
+*.crt
+*.pfx
+*.cer
+
+# Cloud provider credentials
+credentials.json
+aws-credentials*
+gcp-credentials*
+azure-credentials*
+
+
+############################################
+# Logs
+############################################
+
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+############################################
+# OS / Editor Files
+############################################
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Linux
+*~
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+
+############################################
+# Archives / Build Artifacts
+############################################
+
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+
+############################################
+# Node / Misc (safe to ignore)
+############################################
+
+node_modules/
+dist/
+build/
+
+
+*.pub
+
+# Git working directory
+.git/
